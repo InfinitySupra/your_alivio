@@ -1,0 +1,39 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$color-links: #292929;
+$font-global: 'Lato', sans-serif;
+$height-header: 8.67vh;
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page__body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: $font-global;
+}
+
+.container {
+    width: 100%;
+    padding: 0 14vw;  
+}
+
+.button__a {
+    padding: 0.812vw 3.125vw;
+    color: #FFFFFF;
+    background: #5072A7;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 24px;
+}
