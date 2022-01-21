@@ -1,0 +1,176 @@
+.description {
+    * {
+        margin: 0;
+    }
+    width: 100%;
+}
+.description__title {
+    width: 100%;
+    color: $color-links;
+    font-size: .5em;
+    line-height: 157%;
+    margin-top: 8vw;
+    @include breakpoint(mg) {
+        font-size: calc(1em - $size-15);
+        line-height: calc(1.5em - $size-15);
+    }
+    @include breakpoint(lg) {
+        font-size: calc(1em - $size-20);
+        line-height: calc(1.5em - $size-20);
+    }
+    @include breakpoint(md) {
+        font-size: calc(1em - $size-25);
+        line-height: calc(1.5em - $size-25);
+    }
+}
+.wrap {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    @include breakpoint(md) {
+        flex-direction: column;
+        gap: 2em;
+        justify-content: flex-start;
+    }
+}
+.description-content  {
+    width: 34vw;
+}
+.description-slogan__img {
+    width: 30vw;
+}
+.description-slogan__p {
+    color: $color-links;
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 150%;
+    @include breakpoint(mg) {
+        font-size: calc(1.25em - $size-15);
+        line-height: calc(150% - $size-15);
+    }
+    @include breakpoint(lg) {
+        font-size: calc(1.25em - $size-20);
+        line-height: calc(150% - $size-20);
+    }
+    @include breakpoint(md) {
+        font-size: calc(1.25em - $size-25);
+        line-height: calc(150% - $size-25);
+        width: 90vw;
+    }
+}
+
+.c-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    @include breakpoint(md) {
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.description__title {
+    font-weight: 600;
+    font-size: 1.5em;
+    @include breakpoint(mg) {
+        font-size: calc(1.5em - $size-15);
+    }
+    @include breakpoint(lg) {
+        font-size: calc(1.5em - $size-20);
+    }
+    @include breakpoint(md) {
+        font-size: calc(1.5em - $size-25);
+    }
+}
+
+.c-content-head__text, 
+.description-slogan__p {
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 150%;
+    @include breakpoint(mg) {
+        font-size: calc(1.25em - $size-15);
+        line-height: calc(150% - $size-15);
+    }
+    @include breakpoint(lg) {
+        font-size: calc(1.25em - $size-20);
+        line-height: calc(150% - $size-20);
+    }
+    @include breakpoint(md) {
+        font-size: calc(1.25em - $size-25);
+        line-height: calc(150% - $size-25);
+    }
+}
+
+.c-content-head__text, 
+.c-content-head-top {
+    width: 16.81em;
+    @include breakpoint(mg) {
+        width: calc(16.81em - $size-15);
+    }
+    @include breakpoint(lg) {
+        width: calc(16.81em - $size-20);
+    }
+    @include breakpoint(md) {
+        width: calc(16.81em - $size-25);
+    }
+}
+
+.description-slogan__img, 
+.c-content-head__img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    width: 20.31vw;
+    .c-content-head-01-size{
+        width: 14vw;
+        height: auto;
+        @include breakpoint(md) {
+            width: calc(14vw + $size-30);
+        }
+    }
+    .c-content-head-02-size{
+        width: 20vw;
+        height: auto;
+        @include breakpoint(md) {
+            width: calc(20vw + $size-30);
+        }
+    }
+    .c-content-head-03-size{
+        width: 11vw;
+        height: auto;
+        @include breakpoint(md) {
+            width: calc(11vw + $size-30);
+        }
+    }
+    .c-content-head-bottom {
+        margin-top: 3.75em;
+        //width: 16.81em;
+        @include breakpoint(mg) {
+            margin-top: calc(3.75em - $size-15);
+            width: calc(16.81em - $size-15);
+        }
+        @include breakpoint(lg) {
+            margin-top: calc(3.75em - $size-20);
+           // width: calc(16.81em - $size-20);
+        }
+        @include breakpoint(md) {
+            margin-top: calc(3.75em - $size-25);
+           // width: calc(16.81em - $size-25);
+        }
+    }
+}
+
+.slider-margin {
+    margin-top: 10.87em;
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+}

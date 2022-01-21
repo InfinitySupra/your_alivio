@@ -36,16 +36,16 @@ export const buildStyles = () => {
 export const scripts = () => {
      return gulp.src([
      // 'node_modules/jquery/dist/jquery.js',
-      'app/script/main.js'
+      'app/js/main.js'
    ])
       .pipe(concat('main.min.js'))
       .pipe(uglify())
-      .pipe(gulp.dest('app/script'))
+      .pipe(gulp.dest('app/js'))
       .pipe(browserSync.stream())
 };
 
 export const images = () => {
-   return gulp.src('app/assets/**/*')
+   return gulp.src('app/images/**/*')
       .pipe(imagemin([
          imagemin.gifsicle({ interlaced: true }),
          imagemin.mozjpeg({ quality: 75, progressive: true }),
@@ -57,14 +57,14 @@ export const images = () => {
             ]
          })
       ]))
-      .pipe(gulp.dest('dist/assets'))
+      .pipe(gulp.dest('dist/images'))
 };
 
 export const build = () => {
    return gulp.src([
       'app/css/style.min.css',
       'app/fonts/**/*',
-      'app/script/main.min.js',
+      'app/js/main.min.js',
       'app/*.html'
    ], { base: 'app' })
       .pipe(gulp.dest('dist'))
@@ -73,7 +73,7 @@ export const build = () => {
 export const watching = () => {
    gulp.watch(['app/pug/**/*.pug'], pugHtml);
    gulp.watch(['app/scss/**/*.scss'], buildStyles);
-   gulp.watch(['app/script/**/*.js', '!app/script/**/main.min.js'], scripts);
+   gulp.watch(['app/js/**/*.js', '!app/js/**/main.min.js'], scripts);
    gulp.watch(['app/*.html']).on('change', browserSync.reload);
 };
 

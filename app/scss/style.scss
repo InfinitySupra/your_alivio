@@ -1,7 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import "includes/global";
-@import "components/header";
-@import "components/work";
-@import "components/about";
-@import "components/projects";
-@import "components/footer";
+/* Normalize */
+@import "node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); 
+
+/* Variables */
+@import "modules/variables";
+
+/* Responsive */
+@import "responsive/fonts";
+
+/* Modules */
+@import "modules/global", 
+        "modules/header", 
+        "modules/description", 
+        "modules/about", 
+        "modules/projects", 
+        "modules/footer";
+
+/* Media */
+@import "media/m-header", 
+        "media/m-footer";

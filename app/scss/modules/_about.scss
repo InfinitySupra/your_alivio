@@ -1,0 +1,52 @@
+.about {
+    background-color: $color-main;
+    margin-top: 51px;
+    .c-about-flex {
+        padding-top: 229px;
+        padding-bottom: 176px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        @include breakpoint(mg) {
+            padding-top: calc(229px - $size-15);
+            padding-bottom: calc(176px - $size-15);
+        }
+        @include breakpoint(lg) {
+            padding-top: calc(229px - $size-20);
+            padding-bottom: calc(176px - $size-20);
+        }
+        @include breakpoint(md) {
+            padding-top: calc(229px - $size-25);
+            padding-bottom: calc(176px - $size-25);
+            flex-direction: column;
+        }
+    }
+    .ct-about-color {
+        color: $color-white;
+    }
+    .video-wrap {
+        padding-left: 20px;
+        position: relative;
+        max-width: 895px;
+    }
+    .video__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
+    .video__play {
+        position: absolute;
+        background: url(../images/play.svg) no-repeat;
+        background-size: cover;
+        background-position: left;
+        border: none;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}

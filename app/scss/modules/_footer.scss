@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color-main;
+    .c-footer{
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+    }
+    .links-footer-column {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+    .links__a {
+        color: $color-white;
+    }
+}

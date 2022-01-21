@@ -3,7 +3,7 @@ import concat from 'gulp-concat';
 import pug from 'gulp-pug';
 
 const pugHtml = () => {
-   return gulp.src('./app/pug/layout.pug')
+   return gulp.src('./app/pug/index.pug')
       .pipe(
          pug({
             pretty: true
